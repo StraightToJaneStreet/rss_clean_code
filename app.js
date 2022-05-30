@@ -17,8 +17,8 @@ var completedTasksHolder=document.getElementById("completed_tasks");//completed-
 //New task list item
 var createNewTaskElement=function(taskString){
 
-    var listItem=document.createElement("li");
-    listItem.classList.add('li');
+    var listItem=document.createElement("todo_item");
+    listItem.classList.add('todo_item');
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -87,7 +87,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("editMode");
+    var containsClass=listItem.classList.contains("edit_mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -101,7 +101,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    listItem.classList.toggle("edit_mode");
 };
 
 
