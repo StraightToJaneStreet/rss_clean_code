@@ -39,7 +39,7 @@
   flex-grow: 1
 }
 
-.task_row_wrapper {
+.d_flex {
   display: flex;
 }
 
