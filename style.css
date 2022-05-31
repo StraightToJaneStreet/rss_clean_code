@@ -109,7 +109,7 @@
 }
 
 /* Task list */
-.todo__item {
+.job {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -155,15 +155,15 @@
 }
 
 /* Edit Task */
-.todo__item .input[type=text] {
+.job .input[type=text] {
   display: none;
 }
 
-.todo__item.edit_mode .input[type=text] {
+.job--mode_edit .input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.todo__item.edit_mode .label {
+.job--mode_edit .label {
   display: none;
 }
