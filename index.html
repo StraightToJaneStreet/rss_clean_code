@@ -14,35 +14,35 @@
       <p>
         <label class="title title--wide" for="new_task">Add Item</label>
         <div class="flex">
-          <input class="text-field text-field--wide" id="new_task" type="text">
-          <button class="button">Add</button>
+          <input class="text-field text-field--wide text-field--new-task" type="text">
+          <button class="button button--new-task">Add</button>
         </div>
       </p>
       <h3 class="todo__title title">Todo</h3>
-      <ul class= "todo__list" id="incomplete_tasks">
-        <li class="todo__item job">
-          <input class="job__checkbox input input--checkbox" type="checkbox">
-          <label class="job__label label label--wide">Pay Bills</label>
-          <input class="job__input text-field text-field--wide" type="text">
-          <button class="job__button button button--edit">Edit</button>
-          <button class="job__button button button--delete"><img class="button__img" src="./remove.svg" alt="remove element"></button>
+      <ul class= "todo__list list list--incompleted">
+        <li class="todo__item task">
+          <input class="task__checkbox input input--checkbox" type="checkbox">
+          <label class="task__label label label--wide">Pay Bills</label>
+          <input class="task__input text-field  text-field--wide" type="text">
+          <button class="task__button button button--edit">Edit</button>
+          <button class="task__button button button--delete"><img class="button__img" src="./remove.svg" alt="remove element"></button>
         </li>
-        <li class="todo__item job job--mode_edit">
-          <input class="job__checkbox input input--checkbox" type="checkbox">
-          <label class="job__label label label--wide">Go Shopping</label>
-          <input class="job__input text-field text-field--wide" value="Go Shopping" type="text">
-          <button class="job__button button button--edit">Save</button>
-          <button class="job__button button button--delete"><img class="button__img" src="./remove.svg" alt="remove element"></button>
+        <li class="todo__item task task--mode_edit">
+          <input class="task__checkbox input input--checkbox" type="checkbox">
+          <label class="task__label label label--wide">Go Shopping</label>
+          <input class="task__input text-field text-field--wide" value="Go Shopping" type="text">
+          <button class="task__button button button--edit">Save</button>
+          <button class="task__button button button--delete"><img class="button__img" src="./remove.svg" alt="remove element"></button>
         </li>
       </ul>
       <h3 class="todo__title title">Completed</h3>
-      <ul class="todo__list" id="completed_tasks">
-        <li class="todo__item job">
-          <input class="job__checkbox input input--checkbox" type="checkbox" checked>
-          <label class="job__label label label--wide">See the Doctor</label>
-          <input class="job__input text-field text-field--wide" type="text">
-          <button class="job__button button button--edit">Edit</button>
-          <button class="job__button button button--delete"><img class="button__img" src="./remove.svg" alt="remove element"></button>
+      <ul class="todo__list list list--completed" id="completed_tasks">
+        <li class="todo__item task">
+          <input class="task__checkbox input input--checkbox" type="checkbox" checked>
+          <label class="task__label label label--wide">See the Doctor</label>
+          <input class="task__input text-field text-field--wide" type="text">
+          <button class="task__button button button--edit">Edit</button>
+          <button class="task__button button button--delete"><img class="button__img" src="./remove.svg" alt="remove element"></button>
         </li>
       </ul>
     </main>
