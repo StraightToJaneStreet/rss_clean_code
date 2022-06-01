@@ -120,11 +120,11 @@
   align-items: center;
 }
 
-.todo__item > * {
+.job > * {
   vertical-align: middle;
 }
 
-.todo__item > .input[type="checkbox"] {
+.job > .input--checkbox {
   margin: 0 10px;
 }
 
@@ -139,13 +139,13 @@
   width: 226px;
 }
 
-.button--delete .img {
+.button--delete .button__img{
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button--delete .img:hover {
+.button--delete .button__img:hover {
   transform: rotateZ(0);
 }
 
@@ -156,15 +156,15 @@
 }
 
 /* Edit Task */
-.job .text-field {
+.job__input {
   display: none;
 }
 
-.job--mode_edit .text-field {
+.job--mode_edit .job__input {
   display: inline-block;
   width: 224px;
 }
 
-.job--mode_edit .label {
+.job--mode_edit .job__label {
   display: none;
 }
